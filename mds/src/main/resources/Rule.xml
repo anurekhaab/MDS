@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleconfig>
+   <simplerule rChar="/" rWChar="" order="0" applyFirst="Y">
+   </simplerule>
+   <simplerule rChar=" " rWChar="_" applyLast="Y">
+   </simplerule>
+   <simplerule rChar="(" rWChar="" applyFirst="Y" >
+   </simplerule>
+   <simplerule rChar=")" rWChar="" applyFirst="Y" >
+   </simplerule>
+   <simplerule rChar="%" rWChar="PERCENTAGE" applyFirst="Y">
+   </simplerule>
+   <simplerule rChar="C S W" rWChar="CSW" applyFirst="Y">
+   </simplerule>
+   <simplerule rChar="O" rWChar="OIL">
+   </simplerule>
+   <simplerule rChar="M E" rWChar="ME" applyFirst="Y">
+   </simplerule>
+   <simplerule rChar="G E" rWChar="GE" applyFirst="Y">
+   </simplerule>
+   <simplerule rChar="TK" rWChar="TANK">
+   </simplerule>
+   <simplerule rChar="L" rWChar="LEVEL">
+   </simplerule>
+   <simplerule rChar="EL" rWChar="ELECTRIC">
+   </simplerule>
+   <simplerule rChar="EL" rWChar="ELECTRIC">
+   </simplerule>
+   <simplerule rChar="P" rWChar="PRESS" rWord="">
+   </simplerule>
+   <simplerule rChar="P" rWChar="PORT" rWord="">
+   </simplerule>
+ <simplerule rChar="S" rWChar="STBD" rWord="">
+   </simplerule>
+   <simplerule rChar="W" rWChar="WATER" rWord="">
+   </simplerule>
+    <simplerule rChar="HL" rWChar="HIGH_LEVEL" rWord="">
+   </simplerule>
+	<simplerule rChar="-" rWChar="_" rWord="" applyLast="Y">
+   </simplerule>
+   <simplerule  rChar="$N-$M"  rWChar="$N_TO_$M">
+   </simplerule>
+   <complexrule rChar="#" pattern="$N" conditions="GE:$N:1;COMP:_$N_:1;CYL:$N:2;TANK:_$N_:1">
+   </complexrule>
+ <complexrule rChar="NO." pattern="$N" conditions="GE:$N:1;COMP:_$N_:1;CYL:$N:2">
+   </complexrule>
+</ruleconfig>
